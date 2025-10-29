@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Input Nama -->
+        <EditText
+            android:id="@+id/et_nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Lengkap" />
+
+        <!-- Input Email -->
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email" />
+
+        <!-- Spinner Domisili -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Domisili" />
+
+        <Spinner
+            android:id="@+id/spinner_kota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Jenis Kelamin -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Jenis Kelamin" />
+
+        <RadioGroup
+            android:id="@+id/rg_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_pria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pria" />
+
+            <RadioButton
+                android:id="@+id/rb_wanita"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wanita" />
+        </RadioGroup>
+
+        <!-- CheckBox Persetujuan -->
+        <CheckBox
+            android:id="@+id/cb_agree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saya setuju dengan Syarat dan Ketentuan" />
+
+        <!-- Tombol Register -->
+        <Button
+            android:id="@+id/btn_submit_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register" />
+    </LinearLayout>
+</ScrollView>
